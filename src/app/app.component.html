@@ -1,0 +1,6 @@
+<div class="main" *ngIf="weather$ | async as weather">
+  <p>{{ weather.location.name }}</p>
+  <p>{{ weather.location.country }}</p>
+</div>
+
+<router-outlet></router-outlet>
